@@ -17,6 +17,8 @@ This project is a real-time data pipeline designed to collect, process, and visu
 ## Project Overview
 We designed a data pipeline that uses the Reddit API to collect post data, streams it using Apache Kafka, stores it in Cassandra, and visualizes it after querying. Key metrics include post title, author, subreddit, score, number of comments, and other engagement-related data. The pipeline is orchestrated and automated using Apache Airflow, and all components are containerized with Docker for easy deployment and management.
 
+![Data Pipeline Architecture](https://github.com/houda-moudni/Reddit-Data-Pipeline/blob/main/untitled%20folder/reddit_data_pipeline.png)
+
 **Pipeline Components:**
 1. **Data Collection:** Collects Reddit post data using the Reddit API.
 2. **Data Streaming:** Streams real-time data to Apache Kafka topics.
@@ -63,7 +65,7 @@ We designed a data pipeline that uses the Reddit API to collect post data, strea
 
 ## Dashboard
 **Reddit_RealTime_Dashboard**
-![Data Pipeline Architecture](https://github.com/houda-moudni/Reddit-Data-Pipeline/blob/main/untitled%20folder/reddit_dashboard.png)
+![Dashboard](https://github.com/houda-moudni/Reddit-Data-Pipeline/blob/main/untitled%20folder/reddit_dashboard.png)
 Our dashboard presents various Reddit post metrics like post titles, subreddit, score, and comments in real time, helping users to monitor engagement and trends across subreddits.
 
 ***
