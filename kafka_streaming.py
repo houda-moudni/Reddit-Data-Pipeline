@@ -7,8 +7,8 @@ from confluent_kafka.admin import AdminClient, NewTopic
 import logging
 import datetime
 
-client_id = 'qze8bxEYoL0NNVeKI98aRA'
-client_secret = 'JseN87ZRJm_wCjfSiPziVuhcpJ4zbQ'
+client_id = 'client_id'
+client_secret = 'client_secret'
 user_agent = 'reddit_data_pipeline'
 
 logging.basicConfig(level=logging.INFO,
@@ -17,7 +17,6 @@ logger = logging.getLogger(__name__)
 
 admin_config = {
     'bootstrap.servers': 'kafka1:29092,kafka2:29093,kafka3:29094', 
-    # 'bootstrap.servers': 'localhost:9092, localhost:9093, localhost:9094',
     'client.id': 'kafka_admin_client'
 }
 
@@ -65,7 +64,6 @@ def get_reddit_data(client_id, client_secret, user_agent):
 
     return reddit_post_data  
 
-# print(get_reddit_data(client_id, client_secret, user_agent))
 
 class KafkaProducerWrapper:
     def __init__(self, bootstrap_servers):
@@ -87,12 +85,10 @@ class KafkaProducerWrapper:
 
 def kafka_producer_main():
     bootstrap_servers = 'kafka1:29092,kafka2:29093,kafka3:29094'
-    # bootstrap_servers = 'localhost:9092, localhost:9093, localhost:9094'
     kafka_producer = KafkaProducerWrapper(bootstrap_servers)
 
     topic = "reddit_topic"
     
-    # Fetch reddit data
     reddit_data = get_reddit_data(client_id, client_secret, user_agent)
     
 
@@ -110,7 +106,7 @@ def kafka_producer_main():
                 if elapsed_time >= 10:  # Stop after 20 seconds
                     break
                 
-            time.sleep(5)  # Sleep for 5 seconds between producing messages
+            time.sleep(5) 
             print("Waiting for 5 seconds...")
     except KeyboardInterrupt:
         logger.info("Received KeyboardInterrupt. Stopping producer.")
