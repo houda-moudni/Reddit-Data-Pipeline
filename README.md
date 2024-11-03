@@ -63,7 +63,7 @@ We designed a data pipeline that uses the Reddit API to collect post data, strea
 
 ## Dashboard
 **Reddit_RealTime_Dashboard**
-![Data Pipeline Architecture]((https://github.com/houda-moudni/Reddit-Data-Pipeline/edit/main/README.md#:~:text=untitled%20folder-,reddit_dashboard,-.png))
+![Data Pipeline Architecture](https://github.com/houda-moudni/Reddit-Data-Pipeline/edit/main/README.md#:~:text=untitled%20folder-,reddit_dashboard,-.png)](https://github.com/houda-moudni/Reddit-Data-Pipeline/blob/main/untitled%20folder/reddit_dashboard.png)
 Our dashboard presents various Reddit post metrics like post titles, subreddit, score, and comments in real time, helping users to monitor engagement and trends across subreddits.
 
 ***
