@@ -45,7 +45,7 @@ class CassandraConnector:
 
 
 def check_cassandra_main():
-    cassandra_connector = CassandraConnector(['localhost'])
+    cassandra_connector = CassandraConnector(['cassandra'])
     print("Selecting all data ...")
     cassandra_connector.select_all_data()
     print("Counting data ...")
