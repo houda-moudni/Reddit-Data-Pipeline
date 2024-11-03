@@ -1,0 +1,6 @@
+cassandra-driver
+kafka-python
+praw
+apache-airflow
+pyspark
+confluent-kafka 
