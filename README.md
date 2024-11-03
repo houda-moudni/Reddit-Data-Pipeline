@@ -1,6 +1,3 @@
-Here's a README file based on your description:
-
----
 
 # Real-Time-Reddit-Data-Pipeline
 
@@ -73,5 +70,4 @@ Our dashboard presents various Reddit post metrics like post titles, subreddit, 
 **Houda Moudni**
 **email** : houdamoudni.01@gmail.com
 
----
 
