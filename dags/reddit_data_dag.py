@@ -17,7 +17,7 @@ with DAG(
     dag_id="reddit_data_dag",
     default_args=default_args,
     start_date=datetime(2024, 10, 20),
-    schedule_interval= "* * * * *",  #"@daily", #  #"None",#
+    schedule_interval= "* * * * *",
     catchup=False
 ) as dag:
     send_message_task = BashOperator(
