@@ -23,7 +23,7 @@ We designed a data pipeline that uses the Reddit API to collect post data, strea
 
 ## Project Steps
 
-![Data Pipeline Architecture](https://github.com/houda-moudni/Reddit-Data-Pipeline/blob/main/untitled%20folder/reddit_data_pipeline.png)
+![Data Pipeline Architecture](https://github.com/houda-moudni/Reddit-Data-Pipeline/blob/main/statics/reddit_data_pipeline.png)
 
 ### Data Collection
 - Developed scripts to extract Reddit post data using the Reddit API.
