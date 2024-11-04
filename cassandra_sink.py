@@ -114,7 +114,6 @@ def kafka_consumer_cassandra_main():
 
     kafka_config = {
         'bootstrap.servers': 'kafka1:29092, kafka2:29093,kafka3:29094',
-        # 'bootstrap.servers': 'localhost:9092, localhost:9093, localhost:9094',
         'group.id': 'cassandra_consumer_group',
         'auto.offset.reset': 'earliest'
     }
