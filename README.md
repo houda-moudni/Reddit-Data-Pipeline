@@ -1,4 +1,4 @@
-Real-Time-Reddit-Data-Pipeline
+# Reddit Realtime Data Pipeline
 
 ## Table of Contents
 - [Introduction](#introduction)
