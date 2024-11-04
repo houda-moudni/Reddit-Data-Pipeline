@@ -1,5 +1,4 @@
-
-# Real-Time-Reddit-Data-Pipeline
+Real-Time-Reddit-Data-Pipeline
 
 ## Table of Contents
 - [Introduction](#introduction)
